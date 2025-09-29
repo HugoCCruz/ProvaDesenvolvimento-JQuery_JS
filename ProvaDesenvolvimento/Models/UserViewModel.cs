@@ -41,6 +41,7 @@ namespace ProvaDesenvolvimento.Models
         [Display(Name = "Senha")]
         public String Password { get; set; }
 
+        [Required(ErrorMessage = "O campo '{0}' é obrigatório.")]
         [DataType(DataType.Password)]
         [Display(Name = "Confirmação de Senha")]
         [Compare("Password", ErrorMessage = "As senhas não coincidem")]
